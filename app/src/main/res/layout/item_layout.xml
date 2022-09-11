@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:background="#ffffff">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:id="@+id/imageView"
+            app:cardCornerRadius="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp">
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sharkz">
+            </ImageView>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Sharkz"
+            android:textColor="@color/black"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:id="@+id/name"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10.34am"
+            android:textColor="#857474"
+            android:layout_toRightOf="@+id/imageView"
+            android:textSize="12sp"
+            android:gravity="end"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/time"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hellow"
+            android:textColor="#857474"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_below="@+id/name"
+            android:textSize="12sp"
+            android:id="@+id/message"
+            android:layout_marginLeft="20dp"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>
